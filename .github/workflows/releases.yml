@@ -33,7 +33,7 @@ jobs:
           #helm repo add incubator https://charts.helm.sh/incubator
           #helm repo add chartmuseum https://kubernetes-charts.banzaicloud.com
           #helm repo add banzaicloud-stable http://kubernetes-charts.banzaicloud.com/branch/master
-          #helm repo add rimusz https://charts.rimusz.net
+          helm repo add rimusz https://charts.rimusz.net
 
       - name: Update Helm repositories
         run: |

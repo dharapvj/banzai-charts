@@ -1,13 +1,14 @@
 name: Helm chart
 
-on:
-  push:
-    branches:
-      - master
-    tags:
-      - "**/[0-9]+.[0-9]+.[0-9]+"
-      - "**/[0-9]+.[0-9]+.[0-9]+-dev.[0-9]+"
-  pull_request:
+# trigger manually only
+on: workflow_dispatch
+#  push:
+#    branches:
+#      - master
+#    tags:
+#      - "**/[0-9]+.[0-9]+.[0-9]+"
+#      - "**/[0-9]+.[0-9]+.[0-9]+-dev.[0-9]+"
+#  pull_request:
 
 env:
   HELM_PLUGIN_CHARTMUSEUM_PUSH_VERSION: 0.9.0

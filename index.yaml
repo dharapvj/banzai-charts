@@ -394,6 +394,22 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/kube-secrets-init-0.1.4/kube-secrets-init-0.1.4.tgz
     version: 0.1.4
+  kubeless:
+  - apiVersion: v1
+    created: "2024-10-09T11:33:10.334832795Z"
+    dependencies:
+    - name: kafka
+      repository: https://dharapvj.github.io/ex-banzai-charts/
+      version: 0.3.3
+    description: A Helm chart for Kubeless
+    digest: 3e59149f53bb8710ed5e1f436f33ff9e4866051a37a97139b0a2bc376ced88b9
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: kubeless
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/kubeless-0.0.4/kubeless-0.0.4.tgz
+    version: 0.0.4
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 1.10.0
@@ -872,6 +888,33 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/zeppelin-0.0.20/zeppelin-0.0.20.tgz
     version: 0.0.20
+  zeppelin-spark:
+  - apiVersion: v1
+    created: "2024-10-09T11:33:10.458699497Z"
+    dependencies:
+    - name: spark
+      repository: https://dharapvj.github.io/ex-banzai-charts/
+      version: 0.0.20
+    - name: zeppelin
+      repository: https://dharapvj.github.io/ex-banzai-charts/
+      version: 0.0.20
+    deprecated: true
+    description: DEPRECATED An umbrella Helm chart for Zeppelin and Spark
+    digest: 4abdcd580399dc028066cc1cdbf52484a9a2312deb70fd501d1fd54ad724f87b
+    home: https://banzaicloud.com
+    keywords:
+    - spark
+    - zeppelin
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: zeppelin-spark
+    sources:
+    - https://github.com/banzaicloud/zeppelin
+    - https://github.com/banzaicloud/spark
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/zeppelin-spark-0.0.25/zeppelin-spark-0.0.25.tgz
+    version: 0.0.25
   zetcd:
   - apiVersion: v1
     appVersion: 0.0.4
@@ -905,4 +948,4 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/zookeeper-operator-0.3.0/zookeeper-operator-0.3.0.tgz
     version: 0.3.0
-generated: "2024-10-09T11:27:25.590053843Z"
+generated: "2024-10-09T11:33:10.458717491Z"

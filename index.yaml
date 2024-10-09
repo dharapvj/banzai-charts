@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  aws-autoscaling-exporter:
+  - apiVersion: v1
+    created: "2024-10-09T10:41:12.316886573Z"
+    description: An aws autoscaling exporter Helm chart for Kubernetes
+    digest: 2096278b8bae5c086c5093019021fffbf13439a688d14f233221a3129f67423c
+    home: https://banzaicloud.com
+    keywords:
+    - autoscaling
+    - aws
+    - exporter
+    - lifecycle
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: aws-autoscaling-exporter
+    sources:
+    - https://github.com/banzaicloud/banzai-charts
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/aws-autoscaling-exporter-0.0.4/aws-autoscaling-exporter-0.0.4.tgz
+    version: 0.0.4
+generated: "2024-10-09T10:41:12.316896632Z"

@@ -1,5 +1,23 @@
 apiVersion: v1
 entries:
+  ark:
+  - apiVersion: v1
+    appVersion: 0.9.4
+    created: "2024-10-09T10:45:21.587935317Z"
+    description: A Helm chart for ark
+    digest: d25cf3b11ac3c8234289f179c6845a64d7485938bd9338ce908331501c38bf3d
+    home: https://heptio.com/products/#heptio-ark
+    maintainers:
+    - email: d-caruso@hotmail.it
+      name: domcar
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    name: ark
+    sources:
+    - https://github.com/heptio/ark
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/ark-1.2.3/ark-1.2.3.tgz
+    version: 1.2.3
   aws-autoscaling-exporter:
   - apiVersion: v1
     created: "2024-10-09T10:41:12.316886573Z"
@@ -20,4 +38,67 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/aws-autoscaling-exporter-0.0.4/aws-autoscaling-exporter-0.0.4.tgz
     version: 0.0.4
-generated: "2024-10-09T10:41:12.316896632Z"
+  aws-spot-price-history-poller:
+  - apiVersion: v1
+    created: "2024-10-09T10:45:21.734116214Z"
+    description: AWS Spot Price History Poller
+    digest: 39c3b79da483fb8c499facb82efd517b5cbdbf3b189a3da836b1c8acdf27847b
+    home: https://banzaicloud.com
+    keywords:
+    - spot
+    - aws
+    - amazon
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: aws-spot-price-history-poller
+    sources:
+    - https://github.com/banzaicloud/banzai-charts
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/aws-spot-price-history-poller-0.0.4/aws-spot-price-history-poller-0.0.4.tgz
+    version: 0.0.4
+  banzaicloud-docs:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2024-10-09T10:45:21.878908293Z"
+    description: A Helm chart for serving Banzai Cloud documentations
+    digest: 1d0f9955e37a7ff51368d64db5f50284cb3e66af87f558739589316e329450ac
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: banzaicloud-docs
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/banzaicloud-docs-0.1.2/banzaicloud-docs-0.1.2.tgz
+    version: 0.1.2
+  cadence:
+  - apiVersion: v1
+    appVersion: 0.24.0
+    created: "2024-10-09T10:45:22.04131289Z"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: ^0.13.1
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.helm.sh/stable
+      version: ^1.2.0
+    description: Cadence is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: 0a0f69064051d930c41169d56cf4ecfaa5fe41d1ae1424c9bd85b77e3fd5ab5b
+    home: https://cadenceworkflow.io/
+    icon: https://raw.githubusercontent.com/uber/cadence-web/master/client/assets/logo.svg
+    keywords:
+    - cadence
+    - workflow
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: cadence
+    sources:
+    - https://github.com/uber/cadence
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/cadence-0.24.2/cadence-0.24.2.tgz
+    version: 0.24.2
+generated: "2024-10-09T10:45:22.041394167Z"

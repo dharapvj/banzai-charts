@@ -1,5 +1,5 @@
 dependencies:
 - name: spark-hs
   version: 0.2.3
-  repository: https://kubernetes-charts.banzaicloud.com
+  repository: https://dharapvj.github.io/ex-banzai-charts/
   condition: historyServer.enabled

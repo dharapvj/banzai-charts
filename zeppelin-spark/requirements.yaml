@@ -1,8 +1,8 @@
 dependencies:
 - name: spark
   version: 0.0.17
-  repository: https://kubernetes-charts.banzaicloud.com
+  repository: https://dharapvj.github.io/ex-banzai-charts/
 
 - name: zeppelin
   version: 0.0.18
-  repository: https://kubernetes-charts.banzaicloud.com
+  repository: https://dharapvj.github.io/ex-banzai-charts/

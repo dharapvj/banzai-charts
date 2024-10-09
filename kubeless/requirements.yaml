@@ -1,0 +1,4 @@
+dependencies:
+- name: kafka
+  version: 0.3.3
+  repository: https://dharapvj.github.io/ex-banzai-charts/

@@ -333,6 +333,24 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/ingressauthgenerator-0.0.4/ingressauthgenerator-0.0.4.tgz
     version: 0.0.4
+  kafka:
+  - apiVersion: v1
+    appVersion: 2.0.0
+    created: "2024-10-09T11:27:24.588518676Z"
+    dependencies:
+    - name: etcd
+      repository: https://dharapvj.github.io/ex-banzai-charts/
+      version: 0.1.3
+    description: Kafka cluster for kubernetes with native etcd support
+    digest: bb60052d395507051c2fb052c079e646d4138cc3ea95952660ac9003e28a58c6
+    home: https://github.com/apache/kafka
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: kafka
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/kafka-0.3.3/kafka-0.3.3.tgz
+    version: 0.3.3
   keel:
   - apiVersion: v1
     appVersion: 0.12.0
@@ -606,6 +624,31 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/satellite-0.0.4/satellite-0.0.4.tgz
     version: 0.0.4
+  spark:
+  - apiVersion: v1
+    created: "2024-10-09T11:27:24.782378672Z"
+    dependencies:
+    - condition: historyServer.enabled
+      name: spark-hs
+      repository: https://dharapvj.github.io/ex-banzai-charts/
+      version: 0.2.4
+    deprecated: true
+    description: DEPRECATED A Helm chart for Spark in Kubernetes
+    digest: 574dcb0b85d35880a6e883a1a46e202c3da5926d4533f2c1a1602f359506983a
+    home: https://banzaicloud.com
+    icon: https://spark.apache.org/images/spark-logo-trademark.png
+    keywords:
+    - spark
+    - spotguide
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: spark
+    sources:
+    - https://github.com/banzaicloud/spark
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/spark-0.0.20/spark-0.0.20.tgz
+    version: 0.0.20
   spark-hs:
   - apiVersion: v1
     created: "2024-10-09T11:18:13.888806477Z"
@@ -787,4 +830,79 @@ entries:
     urls:
     - https://github.com/dharapvj/ex-banzai-charts/releases/download/spring-boot-0.0.5/spring-boot-0.0.5.tgz
     version: 0.0.5
-generated: "2024-10-09T11:18:15.371849032Z"
+  thanos:
+  - apiVersion: v1
+    appVersion: 0.28.1
+    created: "2024-10-09T11:27:25.018081521Z"
+    description: Thanos is a set of components that can be composed into a highly
+      available metric system with unlimited storage capacity, which can be added
+      seamlessly on top of existing Prometheus deployments.
+    digest: 6224198e4eebef41f9ca263da532515063090790e350e624520d0821782e4834
+    icon: https://raw.githubusercontent.com/thanos-io/thanos/master/docs/img/Thanos-logo_fullmedium.png
+    keywords:
+    - thanos
+    - prometheus
+    - metrics
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: thanos
+    sources:
+    - https://github.com/thanos-io/thanos
+    - https://github.com/banzaicloud/banzai-charts/tree/master/thanos
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/thanos-0.4.9/thanos-0.4.9.tgz
+    version: 0.4.9
+  zeppelin:
+  - apiVersion: v1
+    created: "2024-10-09T11:27:25.185849564Z"
+    deprecated: true
+    description: DEPRECATED A Helm chart for Kubernetes
+    digest: 7f57ce95d401edf4f0ea2315e63abdb976045c241751528c782354f814e569d9
+    home: https://banzaicloud.com
+    keywords:
+    - zeppelin
+    - spotguide
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: zeppelin
+    sources:
+    - https://github.com/banzaicloud/zeppelin
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/zeppelin-0.0.20/zeppelin-0.0.20.tgz
+    version: 0.0.20
+  zetcd:
+  - apiVersion: v1
+    appVersion: 0.0.4
+    created: "2024-10-09T11:27:25.403090675Z"
+    digest: 95a97c397768dcc1965d5295ea4c7461509d72abebd511acab585fe658e0df32
+    home: https://github.com/coreos/zetcd
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: zetcd
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/zetcd-0.1.2/zetcd-0.1.2.tgz
+    version: 0.1.2
+  zookeeper-operator:
+  - apiVersion: v2
+    appVersion: 0.2.8-rc0
+    created: "2024-10-09T11:27:25.590002339Z"
+    description: Pravega Zookeeper-operator Helm chart for Kubernetes
+    digest: 2d198985db8d213416f600e9d240221840d2cad2c71feaa1ad0ebbd6168aba09
+    home: https://github.com/pravega/zookeeper-operator
+    icon: https://zookeeper.apache.org/images/zookeeper_small.gif
+    keywords:
+    - operator
+    - zookeeper
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: zookeeper-operator
+    sources:
+    - https://github.com/pravega/zookeeper-operator/blob/master/charts/zookeeper-operator
+    urls:
+    - https://github.com/dharapvj/ex-banzai-charts/releases/download/zookeeper-operator-0.3.0/zookeeper-operator-0.3.0.tgz
+    version: 0.3.0
+generated: "2024-10-09T11:27:25.590053843Z"

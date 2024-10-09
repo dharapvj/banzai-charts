@@ -2,11 +2,11 @@ dependencies:
 - name: ht-aws-asg-action-plugin
   version: 0.0.3
   condition: asgplugin.enabled
-  repository: https://kubernetes-charts.banzaicloud.com
+  repository: https://dharapvj.github.io/ex-banzai-charts/
   alias: asgplugin
 
 - name: ht-k8s-action-plugin
   version: 0.0.3
   condition: k8splugin.enabled
-  repository: https://kubernetes-charts.banzaicloud.com
+  repository: https://dharapvj.github.io/ex-banzai-charts/
   alias: k8splugin
